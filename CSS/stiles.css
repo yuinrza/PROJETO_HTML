@@ -5,80 +5,7 @@ body{
   font-family: 'Montserrat', sans-serif;
 
 }
-/*.menu{
-    display: flex;
-    justify-content: space-around;
-    background-color: darkslategray ;
-    box-shadow: 0 0 25px #282b40;
-    padding: 0;
- 
-    }
-    
- .navegacion{
-        list-style: none;
-        margin:0;
-        padding: 0 auto;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 1em;
-        
-     
-    }
-.navegacion li{
-       display: inline-block;
-        padding: 5px;
-       
-    }
-.navegacion li a{
-    padding: 30px 30px;
-    text-decoration: none;
-    color:white;
-    font-weight: bolder;
-    }
-.navegacion li a{
-        padding: 30px 30px;
-        text-decoration: none;
-        color:white;
-        
-        }
-     .navegacion li a{
-        padding: 25px; 
-            text-decoration: none;
-            color: aliceblue;
-            }
- .navegacion li a:hover{
-        background-color: cadetblue;
-        }
-           
- #icom-menu{
-            width: 50px;
-            height: 50px;
-            position:absolute;
-            right: 20px;
-            top: 16px;
-            padding: 5px;
-            font-size: 20px;
-            background-color:#fafafafa;
-            border-radius: 100%;
-            color: #787878;
-            display: none;
-           text-align: center;
-           justify-content: center;
-           cursor: pointer;
-           
-        }
-        #icom-menu:hover{
-            opacity: 0.8;
-        }
-        .logo{
-         
-                height: 65px;
-                width: 65px;
-                border-radius: 50%;
-                position: relative;
-                left: 100px ;
-                align-items: center;
-                border: 2px solid aliceblue; 
-        }*/
+
 
 .logo{
     width: 50px;
@@ -396,7 +323,7 @@ font-weight: bolder;
         display:block;
         position:fixed;
         top: 70px;
-       /* left: -100% ;*/
+        left: -100% ;
         background:darkslategray;
         width: 100% ;
         height: 100vh;
@@ -416,7 +343,7 @@ font-weight: bolder;
         padding: 1rem;
     }
 
-    #check:checked ~{
+    #check:checked ~ ul{
         left: 0;
     }
      
