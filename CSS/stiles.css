@@ -5,7 +5,7 @@ body{
   font-family: 'Montserrat', sans-serif;
 
 }
-.menu{
+/*.menu{
     display: flex;
     justify-content: space-around;
     background-color: darkslategray ;
@@ -78,10 +78,63 @@ body{
                 left: 100px ;
                 align-items: center;
                 border: 2px solid aliceblue; 
-        }
+        }*/
 
+.logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 2px solid white;
+}     
+.navegacion{
+    font-family: 'Monserrat';
+    font-size: 1em;
+    
+}
+.navegacion ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+
+}
+.navegacion ul li a{
+    text-decoration: none;
+    color:white
+}
+.navegacion li{
+    margin-right: 1.5rem;
+
+}
+.header{
+    background-color:darkslategray ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+}
+ .navegacion a:hover{ 
+    color:lightslategray;
+
+ }
+ .navegacion li:last-child{
+    background-color:black; 
+     padding: .25rem .75rem;
+     border-radius: .2rem ;
+
+ }
+ .navegacion li:last-child:hover{
+      background: 
+      transparent;
+     
+ }
+
+
+.icono_menu, #check{
+    display:none; 
+}
+       
 .contenedor_2{
-box-shadow: 0 0 25px #282b40;   
+box-shadow: 0 0 25px #282b40;      
 border-color: 1px solid black;
 background-color:#ECECEC ;
 padding: 20px;
@@ -121,10 +174,12 @@ h1 {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold; 
+    font-family: 'Monserrat';
 
 }
+
 p {
-    font-family:'Montserrat';
+    font-family:'Monserrat';
     font-weight: bold;
     font-size: 1em; 
 
@@ -140,7 +195,7 @@ display:flex;
 justify-content: center;
 text-align: center;
 background-color:darkslategray ;
-gap: 30px;
+gap: 20px;
     
 }
 
@@ -190,7 +245,7 @@ height: 150px;
     
 }
 .trabalho{
-    
+    box-shadow: 0 0 25px #282b40; 
     background-color:#ECECEC ;
     padding: 20px;
     display:flex;
@@ -229,14 +284,14 @@ height: 150px;
     height: 150;
 }
 h6{
-    font-family:'Montserrat';
+    font-family:'Monserrat';
     font-weight: bolder;
     font-size: 1em; 
     color: white;
     margin-left: 20px; 
     text-align: center; 
 }
-.bottom {
+.buttom {
 background-color:black;
 border-radius: 10px;
 color:white;
@@ -249,7 +304,7 @@ font-weight: bolder;
     background-color:dimgray;
 }
 .contato{
-
+    color:white;
     box-shadow: 0 0 25px #282b40;   
     border-color: 1px solid black;
     background-color: darkslategray;
@@ -258,9 +313,10 @@ font-weight: bolder;
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    font-family: 'Monserrat';
 }
 .final{
-    color: black;
+    color:white;
     position:relative;
     right: 400px;
     font-family:'Monserrat';
@@ -278,10 +334,11 @@ font-weight: bolder;
     font-size: 4em;
    
 }
-.parte_footer{
+.parte_footer p{
     font-weight: bolder;
     font-family:'Monserrat';
     font-size: 1em; 
+    color:white;
 }
  
 @media screen and (max-width: 800px) {
@@ -292,25 +349,78 @@ font-weight: bolder;
 }
 
 }
-/*@media screen and (max-width: 800px) {
-
-    .contato{
-        display:flex;
-        flex-direction: row;
+@media screen and (max-width: 425px) {
+    .contenedor_2{
+    
+    
     }
-}*/
-
-    @media screen and (max-width: 800px){
-
-        .contenedor_2{
-            height: 20%;
-        }
-    }
-     @media screen and (max-width: 425px){
-
-.img_principal{
-
-    display: none;
+    
+}
+@media screen and (max-width:425px){
+.informacion{
+    padding: 0;
+}
+    
 }
 
+    
+     @media screen and (max-width: 768px){
+
+.img_principal{
+    display:none;
+   
+}
      }
+
+@media screen and(max-width: 425px){
+    
+.h1{
+    font-size: 1em;
+    margin: 0;
+   
+}
+}
+@media screen  and (max-width: 768px){
+    .checkbtn{
+        display: block;
+
+    }
+    .icono_menu{
+        display: block;
+        position:fixed;
+        top:20px;
+        right: 20px;
+        background-color: white;
+    }
+    .navegacion ul{
+        display:block;
+        position:fixed;
+        top: 70px;
+       /* left: -100% ;*/
+        background:darkslategray;
+        width: 100% ;
+        height: 100vh;
+        right: 0;
+
+    }
+    .navegacion ul li {
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        margin:0;
+
+
+    }
+    .navegacion ul li:last-child{
+        background: none;
+        padding: 1rem;
+    }
+
+    #check:checked ~{
+        left: 0;
+    }
+     
+}
+
+
+    

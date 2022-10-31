@@ -4,7 +4,7 @@
     <title>MEU PORTAFOLIO</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="CSS/stiles.css" />
     
 </head>
@@ -13,23 +13,26 @@
     
         
 
-</header>
- 
-      <div class="menu">
-    <img class="logo" src="img/yuni2.jpg"  width="200px"  height="200px"  alt="logo">
-    <nav>
-        <ul class="navegacion">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Profissão</a></li>
-            <li><a href="#">Projetos</a></li>
-            <li><a href="#">Contato</a></li>
+<header class="header">
+    <img src="img/yuni2.jpg" class="logo">
+    <nav class="navegacion">
+
+        <input type="checkbox"  id="check">
+        <label for="check" class="checkbtn">
+           <div class="icono_menu"> <i class="fa-solid fa-bars"></i> </div>
+        </label>
+
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#profissão">Profissão</a></li>
+            <li><a href="#trabalho">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
         </ul>
-    </nav>
-    </div>
+       </nav> 
  </header>
         
     
-    <section class="contenedor_2">  
+    <section class="contenedor_2" id="inicio">  
 
     <img class="img_principal" src="img/yuni2.jpg" width="100px" height="200px" alt="" >  
          
@@ -38,14 +41,15 @@
         <h1> Olá <hr>
             Sou Yunirza Garcia</h1>
         <p>    
-          Venezuelana, uma pessoa criativa, apaixonada por sua profissão. Com imaginação e iniciativa para desenvolver ideias, ou trabalhar nas já existentes
-          eu tenho uma grande capacidade de trabalho, integração e dinamismo.
-          Comprometimento e responsabilidade no meu trabalho siempre disposto a aprender coisas novas. </p>
+            Sou venezuelana, me descrevo como uma pessoa criativa, apaixonada por sua profissão, 
+            com imaginação e iniciativa para desenvolver ideias ou trabalhar com base nas que já existem, 
+            tenho uma grande capacidade de trabalho, integração e dinamismo. 
+            Comprometimento e responsabilidade no meu trabalho, sempre disposta a aprender coisas novas. </p>
     </div>
        
  </section>
 
-    <section class="carreira">
+    <section class="carreira" id="profissão">
 
               <h2>Profissão</h2>
          
@@ -57,33 +61,33 @@
     </section>
    
         
-            <section class="trabalho">
+            <section class="trabalho"  id="trabalho">
                 <h2>Projetos</h2>
             <div class="card-1">
-            <img class= "templete" src="img/codigos.jpg.jpg" width="200px" height="150px">
-            <h6> Receta Arroz Doce</h6>
-            <bottom class="bottom">Github</bottom>
+            <img class= "templete" src="img/ArrozDoce.jpg" width="200px" height="150px">
+            <h6> Receita Arroz Doce</h6>
+            <buttom class="buttom">Github</bottom>
             </div>
     
             <div class="card_receta">
-            <img class="template"src="img/desarrollador.jpg" width="200px" height="150px">
-            <h6>Floresta </h6>
+            <img class="template"src="" width="200px" height="150px">
+            <h6> </h6>
             <div class="card__proyect-links">
-             <bottom class="bottom"> Github</bottom>
+             <buttom class="buttom"> Github</bottom>
             </div>
            </div>
                  <div class="card_3">
                     
-                    <img class="template"src="img/desarrollador.jpg" width="200px" height="150px">
-                    <h6>Floresta </h6>
+                    <img class="template"src="" width="200px" height="150px">
+                    <h6></h6>
                     <div class="card__proyect-links">
-                     <bottom class="bottom"> Github</bottom>
+                     <buttom class="buttom"> Github</bottom>
 
                  </div>
            
             </section>
             
-       <footer class="contato"> 
+       <footer class="contato" id="contato"> 
    
         <h2>Contato</h2>
         <div class="social">
