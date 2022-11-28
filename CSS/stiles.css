@@ -185,25 +185,30 @@ height: 150px;
       
 }  
 
-.card_receta{
+#card_receta{
     width: 200px;
     height: 300px;
     background-color:darkslategray;
     margin: 1em;
 }
-.card-1{
+#card-1{
     width: 200px;
     height: 300px;
-    background-color:darkslategray;;
+    background-color:darkslategray;
     margin: 1em;
        
 }
-.card_3{
+#card_3{
     width: 200px;
     height: 300px;
     background-color:darkslategray;;
     margin: 1em;
 
+}
+
+.card:hover{
+    transform: translateY(-30px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
 
 .template{
@@ -231,43 +236,115 @@ font-weight: bolder;
     background-color:dimgray;
 }
 .contato{
-    color:white;
+    color:black;
     box-shadow: 0 0 25px #282b40;   
     border-color: 1px solid black;
-    background-color: darkslategray;
-    padding: 20px;
+    background-color:#ECECEC ;
+    padding: 50px;
     display:flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction:row;
+    justify-content:space-around;
     text-align: center;
     font-family: 'Monserrat';
+    height: 550px;
+   
 }
+h2{
+    font-size: 2em; 
+}
+.escreveme{
+    font-weight: bold;
+    font-size: 1.5em;
+    /*background-color:darkslategray ;*/
+    color:black;
+    /*border: 2px solid black;*/
+    border-radius: 25px;
+   /* height: 100px;*/
+    position: relative;
+    top: 100px;
+    height: 300px;
+    width: 400px;
+    padding-right: 100px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    margin-top: 2em;
+    height: 500px;
+    background-color: darkslategrey;
+
+   
+    
+}
+.form-group textarea {
+    height: 200px;
+    padding: 1.5em;
+    background: none;
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+  }
+  
+  .form-group .input {
+    padding: 10px 10px;
+    margin-bottom: 1em;
+    /*background: none;
+    border: none;*/
+    border-bottom: 1px solid black;
+    color: black;
+  }
+  
+  .form-group .btn-submit {
+    padding: 10px 20px;
+    margin: 1em;
+    border-radius: 20px;
+    border: none;
+    text-transform: uppercase;
+    background-color:black ;
+    color: white;
+    border: 2px solid black;
+    font-family: 'Monserrat';
+
+   
+  }
+  
 .final{
     color:white;
     position:relative;
     right: 400px;
     font-family:'Monserrat';
-    font-size: 2em;
-
-
+    font-size: 2.5em;
 }
-.social{
-    font-weight:bold;
-    display: inline-block;
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    line-height: 1;
-    font-size: 4em;
+#social {
+        color:darkslategrey;
+        font-size: 3.5em;
+        padding-top: 30px;       
+    }
    
+.footer{
+    background-color: darkslategray;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 25px #282b40;
+     
+    
 }
-.parte_footer p{
+
+.parte_footer{
     font-weight: bolder;
     font-family:'Monserrat';
-    font-size: 1em; 
+    font-size: 1.5em; 
     color:white;
+    padding-bottom: 10px;
+   
 }
- 
+
+
 @media screen and (max-width: 800px) {
     .trabalho {
         display:flex;

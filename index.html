@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <title>MEU PORTAFOLIO</title>
+    <title>MEU PORTFÓLIO</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="CSS/stiles.css" />
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 
 <body>
     
-        
-
 <header class="header">
     <img src="img/yuni2.jpg" class="logo">
     <nav class="navegacion">
@@ -63,48 +61,78 @@
         
             <section class="trabalho"  id="trabalho">
                 <h2>Projetos</h2>
-            <div class="card-1">
+            <div id="card-1" class="card">
             <img class= "templete" src="img/ArrozDoce.jpg" width="200px" height="150px">
             <h6> Receita Arroz Doce</h6>
-            <buttom class="buttom">Github</bottom>
+            <a class="buttom" href="https://github.com/yuinrza/Exercicio4_HTML.git" target="_blank"> Github</a>
+              
             </div>
     
-            <div class="card_receta">
+            <div id="card_receta" class="card">
             <img class="template"src="img/floresta.jpg" width="200px" height="150px">
             <h6> Floresta</h6>
             <div class="card__proyect-links">
-             <buttom class="buttom"> Github</bottom>
+            <a class="buttom" href="https://github.com/yuinrza/Template-floresta.git" target="_blank"> Github</a>
+               
             </div>
            </div>
-                 <div class="card_3">
+                 <div id="card_3" class="card">
                     
                     <img class="template"src="" width="200px" height="150px">
                     <h6></h6>
                     <div class="card__proyect-links">
                      <buttom class="buttom"> Github</bottom>
-
+                    
                  </div>
            
             </section>
             
-       <footer class="contato" id="contato"> 
-   
-        <h2>Contato</h2>
-        <div class="social">
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-linkedin"></i>
-            <i class="fab fa-twitter-square"></i>
-          
-        </div>
+          <div class="contato"> 
+            <h1>Contato</h1>
+              <div class="escreveme">
+               <h4>Quere entrar em contato comigo?...</h4>
+               <p> Preencha o formulario ao lado e entrarei em contato o mais rápido possível.<br>
+                Voce tambem pode me encontrar nas siguientes redes:
+               </p>
+                 <h4>Redes Sociais</h4>
+            
+                <i id="social" class="fab fa-instagram"></i>
+                <i  id="social" class="fab fa-linkedin"></i>
+                <i  id="social" class="fab fa-twitter-square"></i>
+              
+               </div>              
+               <div class="container-3">
+            <form class="form-group" name="formuser" action="enviar.php" method="post">
+              <input type="text" placeholder="Nome" class="input" name="nome"> 
+              <input type="email" placeholder="Email" class="input" name="email">
+              <input type="text" placeholder="CEP" id="cep" class="input" name="cep">
+              <button type="button"  id="buscar_cep" ><i class="fa fa-search" action="" ></i></button> </br>
+              
+              <input type="text" placeholder="Cidade" class= "input" id="cidade" name="uf">
+              <input type="text" placeholder="Rua" class= "input" id="rua" name="endereco">
+              <input type="text" placeholder="Estado" class= "input" id="estado" name="endereco">
+              <input type="text" placeholder="Bairro" class= "input" id="bairro" name="endereco">
+              <textarea name="message" placeholder="Escrever..." name="obser"></textarea>
+              <button type="submit" class="btn-submit" onclick = "return validarT()">Enviar</button>
 
-   <div class="parte_footer">
-        <p>
-            "Tudo o que você precisa para realizar o seu sonho é você realmente acreditar nele."
-        </p>
+            </form>
+           </div>
+           </div>
+           
+             <script src="js/scripts.js"></script> 
+           
+             <footer class="footer">
+           <div class="parte_footer">
+                <p>
+                    "Tudo o que você precisa para realizar o seu sonho é você realmente acreditar nele."
+                </p>
+            
+            </div>
+            
+            </footer>
+            
     
-    </div>
     
-    </footer>
-</div>
+
 </body>
 </html>
